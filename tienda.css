@@ -1,0 +1,11 @@
+.height{
+    height: 400px;
+}
+
+.heightDiv{
+    height: 30px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}

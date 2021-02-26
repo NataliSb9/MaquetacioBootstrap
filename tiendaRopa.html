@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="tienda.css" />
+    <script src="tienda.js"></script>
+    <script src="bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js"></script>
+    <title>Tienda Ropa</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-center-block">
+      <div class="container-fluid">
+        <h1 class="navbar-brand-expand-lg">MyShop</h1>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Mujer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Hombre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Infantil</a
+              >
+            </li>
+          </ul>
+
+
+          <button onclick = "carrito.verCarrito()" class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#carrito" aria-expanded="false" aria-controls="carrito">
+            Carrito
+           </button>
+   
+   
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-secondary" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container collapse" id="carrito">
+        Mi carro
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card-body">
+            <img class="height" src="img/ropa1.png" alt="" />
+            <p class="prenda">Mono negro</p>
+            <p class="precio">40€</p>
+            <a
+              onclick="carrito.addPrenda(mono)"
+              href="#"
+              class="btn btn-outline-secondary"
+              >Comprar</a
+            >
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card-body">
+            <img class="height" src="img/ropa2.png" alt="" />
+            <p class="prenda">Vestido flores</p>
+            <p class="precio">29€</p>
+            <a
+              onclick="carrito.addPrenda(vestido)"
+              href="#"
+              class="btn btn-outline-secondary"
+              >Comprar</a
+            >
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div class="card-body">
+            <img class="height" src="img/ropa3.png" alt="" />
+            <p class="prenda">Camisa</p>
+            <p class="precio">25€</p>
+            <a
+              onclick="carrito.addPrenda(camisa)"
+              href="#"
+              class="btn btn-outline-secondary"
+              >Comprar</a
+            >
+          </div>
+        </div>
+
+        <div class="col-sm-2"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <img class="height" src="img/ropa4.png" alt="" />
+          <p class="prenda">Vestido estampado</p>
+          <p class="precio">29€</p>
+          <a
+            onclick="carrito.addPrenda(vestido)"
+            href="#"
+            class="btn btn-outline-secondary"
+            >Comprar</a
+          >
+        </div>
+        <div class="col-3">
+          <img class="height" src="img/ropa5.png" alt="" />
+          <p class="prenda">Mono largo</p>
+          <p class="precio">40€</p>
+          <a
+            onclick="carrito.addPrenda(mono)"
+            href="#"
+            class="btn btn-outline-secondary"
+            >Comprar</a
+          >
+        </div>
+        <div class="col-1">
+          <img class="height" src="img/ropa6.png" alt="" />
+          <p class="prenda">Camisa</p>
+          <p class="precio">25€</p>
+          <a
+            onclick="carrito.addPrenda(camisa)"
+            href="#"
+            class="btn btn-outline-secondary"
+            >Comprar</a
+          >
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <img class="height" src="img/ropa1.png" alt="" />
+          <p class="prenda">Mono negro</p>
+          <p class="precio">40€</p>
+          <a
+            onclick="carrito.addPrenda(mono)"
+            href="#"
+            class="btn btn-outline-secondary"
+            >Comprar</a
+          >
+        </div>
+        <div class="col-3">
+          <img class="height" src="img/ropa2.png" alt="" />
+          <p class="prenda">Vestido flores</p>
+          <p class="precio">29€</p>
+          <a
+            onclick="carrito.addPrenda(vestido)"
+            href="#"
+            class="btn btn-outline-secondary"
+            >Comprar</a
+          >
+        </div>
+        <div class="col-1">
+          <img class="height" src="img/ropa3.png" alt="" />
+          <p class="prenda">Camisa</p>
+          <p class="precio">25€</p>
+          <a
+            onclick="carrito.addPrenda(camisa)"
+            href="#"
+            class="btn btn-outline-secondary"
+            >Comprar</a
+          >
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <img class="height" src="img/ropa4.png" alt="" />
+          <p class="prenda">Vestido estampado</p>
+          <p class="precio">29€</p>
+          <a
+            onclick="carrito.addPrenda(vestido)"
+            href="#"
+            class="btn btn-outline-secondary"
+            >Comprar</a
+          >
+        </div>
+        <div class="col-sm-3">
+          <img class="height" src="img/ropa5.png" alt="" />
+          <p class="prenda">Mono largo</p>
+          <p class="precio">40€</p>
+          <a
+            onclick="carrito.addPrenda(mono)"
+            href="#"
+            class="btn btn-outline-secondary"
+            >Comprar</a
+          >
+        </div>
+        <div class="col-sm-1">
+          <img class="height" src="img/ropa6.png" alt="" />
+          <p class="prenda">Camisa</p>
+          <p class="precio">25€</p>
+          <a
+            onclick="carrito.addPrenda(camisa)"
+            href="#"
+            class="btn btn-outline-secondary"
+            >Comprar</a
+          >
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </div>
+  </body>
+</html>
